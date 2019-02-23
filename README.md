@@ -4,7 +4,7 @@ Biblioteca para criação de Certificados Digitais para utilização em assinatu
 
 Exemplo 01 - Para adicionar vários parâmetros no Issuer e no Subject do Certificado
 
-var c = new Certificate();
+            var c = new Certificate();
             c.ListOidIssuer.Add(Org.BouncyCastle.Asn1.X509.X509Name.C);
             c.ListOidIssuer.Add(Org.BouncyCastle.Asn1.X509.X509Name.OU);
             c.ListOidIssuer.Add(Org.BouncyCastle.Asn1.X509.X509Name.CN);
