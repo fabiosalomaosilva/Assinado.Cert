@@ -21,8 +21,8 @@ Exemplo 01 - Para adicionar vários parâmetros no Issuer e no Subject do Certif
             c.ListOidSubject.Add(Org.BouncyCastle.Asn1.X509.X509Name.CN);
 
             c.ListValuesSubject.Add("BR");
-            c.ListValuesSubject.Add(Email);
-            c.ListValuesSubject.Add($"SETOR");
+            c.ListValuesSubject.Add("Email");
+            c.ListValuesSubject.Add("SETOR");
             c.ListValuesSubject.Add("ENTIDADE");
             c.ListValuesSubject.Add("CPF"));
             c.ListValuesSubject.Add("NOME COMPLETO");
