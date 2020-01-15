@@ -1,6 +1,10 @@
 # Assinado.Cert
 
-Biblioteca para criação de Certificados Digitais para utilização em assinaturas em documentos.
+Biblioteca em C# para criação de Certificados Digitais e utilização em assinaturas digitais em documentos.
+
+#Intalação da biblioteca via Nuget Package
+
+            Install-Package Assinado.Cert -Version 1.0.2
 
 Exemplo 01 - Para adicionar vários parâmetros no Issuer e no Subject do Certificado
 
