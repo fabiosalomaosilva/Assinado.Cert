@@ -2,11 +2,11 @@
 
 Biblioteca em C# para criação de Certificados Digitais e utilização em assinaturas digitais em documentos.
 
-#Intalação da biblioteca via Nuget Package
+# Intalação da biblioteca via Nuget Package
 
             Install-Package Assinado.Cert -Version 1.0.2
 
-Exemplo 01 - Para adicionar vários parâmetros no Issuer e no Subject do Certificado
+# Exemplo - Adicionando parâmetros no Issuer e no Subject do Certificado
 
             var c = new Certificate();
             c.ListOidIssuer.Add(Org.BouncyCastle.Asn1.X509.X509Name.C);
