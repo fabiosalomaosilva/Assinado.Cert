@@ -31,5 +31,8 @@ Biblioteca em C# para criação de Certificados Digitais e utilização em assin
             c.ListValuesSubject.Add("CPF"));
             c.ListValuesSubject.Add("NOME COMPLETO");
 
-            var cert = c.GenerateSelfSignedCertificate(c.ListOidSubject, c.ListValuesSubject, c.ListOidIssuer, c.ListValuesIssuer);
+            var cert = c.GenerateSelfSignedCertificate(c.ListOidSubject, 
+                                                       c.ListValuesSubject, 
+                                                       c.ListOidIssuer, 
+                                                       c.ListValuesIssuer);
             X509Certificate2UI.DisplayCertificate(cert);
