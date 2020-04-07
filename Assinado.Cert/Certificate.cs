@@ -32,7 +32,7 @@ namespace Assinado.Cert
         public ArrayList ListOidIssuer { get; set; }
         public ArrayList ListValuesIssuer { get; set; }
 
-        public X509Certificate2 GenerateSelfSignedCertificate(ArrayList listOidSubject, ArrayList listValuesSubject, ArrayList listOidIssuer, ArrayList listValuesIssuer, int keyStrength = 2048)
+        public X509Certificate2 GenerateSelfSignedCertificate(string friendlyName, ArrayList listOidSubject, ArrayList listValuesSubject, ArrayList listOidIssuer, ArrayList listValuesIssuer, int keyStrength = 2048)
         {
             AsymmetricKeyParameter issuerPrivKey = GenerateCaCertificate(listOidIssuer, listValuesIssuer);
             // Generating Random Numbers
@@ -93,7 +93,7 @@ namespace Assinado.Cert
                 rsa.Modulus, rsa.PublicExponent, rsa.PrivateExponent, rsa.Prime1, rsa.Prime2, rsa.Exponent1, rsa.Exponent2, rsa.Coefficient);
 
             x509.PrivateKey = DotNetUtilities.ToRSA(rsaparams);
-            x509.FriendlyName = "FABIO SALOMAO SILVA VOGTH";
+            x509.FriendlyName = friendlyName;
 
             return x509;
 
